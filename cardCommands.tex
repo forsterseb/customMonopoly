@@ -1,0 +1,154 @@
+%
+% Chance/Community Card front {Name of Card}{first text content}{second text content}
+%
+\newcommand{\monChanceCard}[3]{
+\begin{tcolorbox}[colback=white, colframe=black, width=9cm, height=6cm, sharp corners, boxsep=0cm, top=0cm, beforeafter skip balanced=0mm, grow to left by=1cm]
+    \begin{minipage}[t][1.5cm][c]{\textwidth}
+        \centering
+        {\LARGE \textbf{#1}}
+    \end{minipage}
+    \par\noindent\rule{\textwidth}{0.4pt}\vspace{-0.75\baselineskip}
+    \begin{minipage}[t][2cm][c]{\textwidth}
+        \centering
+        {#2}
+    \end{minipage}
+    \par\noindent\rule{\textwidth}{0.4pt}\vspace{-0.75\baselineskip}
+    \begin{minipage}[t][2cm][c]{\textwidth}
+        \centering
+        {#3}
+    \end{minipage}
+\end{tcolorbox}
+}
+
+%
+% Chance Card back
+%
+\newcommand{\monChanceBack}[0]{
+\begin{tcolorbox}[colback=white, colframe=black, width=9cm, height=6cm, sharp corners, boxsep=0cm, top=0cm,beforeafter skip balanced=0mm,grow to left by=1cm]
+    \vspace*{0.25cm}
+    \begin{figure}[t]
+        \centering
+        \includegraphics[height=5.5cm]{images/fia.png}
+    \end{figure}
+\end{tcolorbox}
+}
+
+%
+% Community Card back
+%
+\newcommand{\monCommBack}[0]{
+\begin{tcolorbox}[colback=white, colframe=black, width=9cm, height=6cm, sharp corners, boxsep=0cm, top=0cm, grow to left by=1cm]
+    \vspace*{0.25cm}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[height=5.5cm]{images/team_rad.jpg}
+    \end{figure}
+    \vspace*{0.25cm}
+\end{tcolorbox}
+}
+
+%
+% Street Card front {Name of Card}{background Color}{image}{list of the 9 prices}
+%
+\newcommand{\monCardStreet}[4]{
+\readlist*\costs{#4}% star option removes surrounding whitespace
+\begin{tcolorbox}[colback=white, colframe=black, width=6cm, height=9cm, sharp corners, boxsep=0cm, top=-0.5mm,grow to left by=0.3cm,beforeafter skip balanced=0mm]
+    \begin{tcolorbox}[colback=#2, colframe=black, width=5.9cm-0.5mm, sharp corners, boxrule=0.5mm, left skip=-0.4cm-0.5mm,colupper=black]
+        \begin{center}
+            {\Large \textbf{#1}} \\
+        \end{center}
+        \begin{center}
+            \includegraphics[height=1cm]{#3}
+        \end{center}
+    \end{tcolorbox}
+    \begin{tcolorbox}[colback=white, colframe=white, width=5.5cm, sharp corners, left skip=-0.4cm, boxrule=0mm, colupper=black, before skip=-0.2cm, bottom=-0.25cm]
+        \begin{flushleft}
+            Rent \hfill \$\costs[1] \\[0.2cm]
+            With Color Set \hfill \$\costs[2] \\[0.15cm]
+            With 1 Motorhome \hfill \$\costs[3] \\[0.15cm]
+            With 2 Motorhomes \hfill \$\costs[4] \\[0.15cm]
+            With 3 Motorhomes \hfill \$\costs[5] \\[0.15cm]
+            With 4 Motorhomes \hfill \$\costs[6] \\[0.15cm]
+            With Grandstand \hfill \$\costs[7] \\[0.15cm]
+        \end{flushleft}
+    \end{tcolorbox}
+    \par\noindent\rule{\textwidth}{0.4pt}\vspace{-0.2cm}
+    \begin{flushleft}
+        Motorhomes cost \hfill \$\costs[8] each \\[0.15cm]
+        Grandstand cost \hfill \$\costs[9] each \\[0.05cm]
+        \hfill \tiny (plus 4 motorhomes)
+    \end{flushleft}
+\end{tcolorbox}
+}
+
+%
+% Railstation Front {Name of Card}{Background Color}{Image}
+%
+\newcommand{\monCardRail}[4]{
+\readlist*\costs{#4}% star option removes surrounding whitespace
+\begin{tcolorbox}[colback=#2, colframe=black, width=6cm, height=9cm, sharp corners, boxsep=0cm, top=0.75cm,grow to left by=0.3cm, beforeafter skip balanced=0mm]
+        \begin{center}
+            \includegraphics[height=3cm]{#3} 
+        \end{center}
+        \begin{center}
+            \vspace{0.25cm}
+            {\Large \textbf{#1}}
+            \vspace{0.25cm}
+        \end{center}
+    
+        \begin{flushleft}
+            Rent \hfill \$\costs[1] \\[0.2cm]
+            For 2 departments \hfill \$\costs[2] \\[0.2cm]
+            For 3 departments \hfill \$\costs[3] \\[0.2cm]
+            For 4 departments \hfill \$\costs[4] \\[0.2cm]
+        \end{flushleft}
+\end{tcolorbox}
+}
+
+%
+% Utility Front {Name of Card}{Background Color}{Image}
+%
+\newcommand{\monCardUtil}[3]{
+\begin{tcolorbox}[colback=#2, colframe=black, width=6cm, height=9cm, sharp corners, boxsep=0cm, top=0.75cm,grow to left by=0.3cm,beforeafter skip balanced=0mm]
+        \begin{center}
+            \includegraphics[height=3cm]{#3}
+        \end{center}
+        \begin{center}
+            \vspace{0.25cm}
+            {\Large \textbf{#1}}
+            \vspace{0.25cm}
+        \end{center}
+    
+        \begin{flushleft}
+            If one "Utility" is owned rent is 4 times the amount shown on dice.\\[0.2cm]
+
+            If both "Utilities" are owned rent is 10 times amount show on dice.\\[0.2cm]
+        \end{flushleft}
+\end{tcolorbox}
+}
+
+%
+% back {Name of Card}{Mortgage}
+%
+\newcommand{\monCardBack}[2]{
+\begin{tcolorbox}[colback=white, colframe=black, width=6cm, height=9cm, sharp corners, boxsep=0mm, top=0mm, bottom=0mm, left=0mm, right=0mm,grow to left by=0.3cm, beforeafter skip balanced=0mm]
+    \begin{center}
+        \vspace{0.5cm}
+        {\LARGE \textbf{Mortgaged}} \\
+    \end{center}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{images/F1.png}
+    \end{figure}
+    \par\noindent\rule{\textwidth}{0.4pt}
+    \begin{center}
+        {\Large \textbf{#1}}
+
+        {Mortgaged for \$#2}
+    \end{center}
+    \par\noindent\rule{\textwidth}{0.4pt}
+    \begin{center}
+        {Card must be turned this side up if property is mortgaged}
+    \end{center}
+\end{tcolorbox}
+}

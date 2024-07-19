@@ -1,0 +1,142 @@
+%
+% Map Street Tile {Name of Tile}{background color}{image}{price}
+%
+\newcommand{\monMapStreet}[4]{
+\begin{tcolorbox}[colback=white, colframe=black, width=6cm, height=9cm, sharp corners, boxsep=0cm, top=-0.5mm]
+    \begin{tcolorbox}[colback=#2, colframe=black, width=5.6cm-0.5mm, sharp corners, left skip=-0.4cm-0.5mm, boxrule=0.5mm, colupper=black]
+        \begin{center}
+        \end{center}
+        \begin{center}
+        \end{center}
+    \end{tcolorbox}
+    \begin{tcolorbox}[colback=white, colframe=white, width=5.5cm, sharp corners, left skip=-0.4cm, boxrule=0mm, colupper=black, before skip=-0.2cm, bottom=-0.25cm]
+        \begin{center}
+            {\LARGE \textbf{#1}}
+            \vspace*{1cm}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[height=3cm]{#3}
+            \end{figure}
+        \end{center}
+    \end{tcolorbox}
+    \vspace*{0.7cm}
+    \par\noindent\rule{\textwidth}{0.4pt}
+    \begin{center}
+        {\$#4}
+    \end{center}
+\end{tcolorbox}
+}
+
+%
+% Map Utilty Tile {name of utility}{image}{price}
+%
+\newcommand{\monMapUtil}[3]{
+\begin{tcolorbox}[colback=white, colframe=black, width=6cm, height=9cm, sharp corners, boxsep=0cm, top=0.1cm]
+    \begin{tcolorbox}[colback=white, colframe=white, width=5.5cm, sharp corners, left skip=-0.4cm, boxrule=0mm, colupper=black, before skip=-0.2cm, bottom=-0.25cm]
+        \begin{center}
+            {\LARGE \textbf{#1}}
+        \end{center}
+        \vspace{0.25cm}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=4cm, width=0.9\textwidth]{#2}
+        \end{figure}
+    \end{tcolorbox}
+    \vspace*{0.75cm}
+    \par\noindent\rule{\textwidth}{0.4pt}
+    \begin{center}
+        {\$#3}
+    \end{center}
+\end{tcolorbox}
+}
+
+%
+% Map simple Tile (used for community and chance tile) {name of tile}{image}
+%
+\newcommand{\monMapCard}[2]{
+\begin{tcolorbox}[colback=white, colframe=black, width=6cm, height=9cm, sharp corners, boxsep=0cm, top=0.1cm]
+    \begin{tcolorbox}[colback=white, colframe=white, width=5.5cm, sharp corners, left skip=-0.4cm, boxrule=0mm, colupper=black, before skip=-0.2cm, bottom=-0.25cm]
+        \begin{center}
+            {\LARGE \textbf{#1}}
+        \end{center}
+        \vspace{0.75cm}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.9\textwidth]{#2}
+        \end{figure}
+    \end{tcolorbox}
+\end{tcolorbox}
+}
+
+%
+% Map Start Tile {text}{image}
+%
+\newcommand{\monMapStart}[2]{
+\begin{tcolorbox}[colback=white, colframe=black, width=9cm, height=9cm, sharp corners, boxsep=0cm, top=0.1cm]
+        \begin{center}
+            {\LARGE \textbf{#1}}
+        \end{center}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{#2}
+        \end{figure}
+        \begin{center}
+            {\Huge $\Leftarrow$}
+        \end{center}
+\end{tcolorbox}
+}
+
+%
+% Map Prison Tile {text}{image}
+%
+\newcommand{\monMapStew}[2]{
+\begin{tcolorbox}[colback=white, colframe=black, width=9cm, height=9cm, sharp corners, boxsep=0cm, top=0.1cm]
+    \begin{tcolorbox}[colback=white, colframe=black, width=6.5cm, height=7cm, sharp corners, grow to right by=2cm, boxrule=0.5mm, colupper=black, before skip=-0.2cm, bottom=-0.25cm]
+        \begin{center}
+            {\LARGE \textbf{#1}}
+        \end{center}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{#2}
+        \end{figure}
+    \end{tcolorbox}
+    just visiting
+\end{tcolorbox}
+}
+
+%
+% Map Free Parking Tile {text}{image}
+%
+\newcommand{\monMapMVPod}[2]{
+\begin{tcolorbox}[colback=white, colframe=black, width=9cm, height=9cm, sharp corners, boxsep=0cm, top=0.1cm]
+        \begin{center}
+            {\LARGE \textbf{#1}}
+        \end{center}
+        \vspace*{0.5cm}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=7cm]{#2}
+        \end{figure}
+        \begin{center}
+            You can park here, mate.
+        \end{center}
+\end{tcolorbox}
+}
+
+%
+% Map go to prison Tile {text}{image}
+%
+\newcommand{\monMapGTS}[2]{
+\begin{tcolorbox}[colback=white, colframe=black, width=9cm, height=9cm, sharp corners, boxsep=0cm, top=0.1cm]
+        \begin{center}
+            {\LARGE \textbf{#1}}
+        \end{center}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=7cm]{#2}
+        \end{figure}
+\end{tcolorbox}
+}

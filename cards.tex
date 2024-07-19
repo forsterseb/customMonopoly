@@ -1,0 +1,58 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{float}
+\usepackage{xargs}
+\usepackage{listofitems}
+
+\setmainfont[Mapping=tex-text, BoldFont=Kabel_Bold.ttf]{Kabel_Regular.ttf}
+
+\begin{document}
+\input{cardCommands.tex}
+
+%
+% Player hand cards
+%
+\begin{minipage}{0.375\textwidth}
+    \monCardStreet{Bahrain}{brown}{images/Bahrain carbon.png}{2,4,10,30,90,160,250,50,50}
+    \monCardStreet{Jeddah}{brown}{images/Saudi Arabia carbon.png}{4,8,20,60,180,320,450,50,50}
+    \monCardStreet{Australia}{cyan}{images/Australia carbon.png}{6,12,30,90,270,400,550,50,50}
+    \monCardStreet{Japan}{cyan}{images/Japan carbon.png}{6,12,30,90,270,400,550,50,50}
+    \monCardStreet{China}{cyan}{images/China carbon.png}{8,16,40,100,300,450,600,50,50}
+    \monCardStreet{Imola}{pink}{images/Emilia Romagna carbon.png}{10,20,50,150,450,625,750,100,100}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monCardStreet{Monaco}{pink}{images/Monte Carlo carbon.png}{10,20,50,150,450,625,750,100,100}
+    \monCardStreet{Canada}{pink}{images/Canada carbon.png}{12,24,60,180,500,700,900,100,100}
+    \monCardStreet{Spain}{orange}{images/Spain carbon.png}{14,28,70,200,550,750,950,100,100}
+    \monCardStreet{Austria}{orange}{images/Austria carbon.png}{14,28,70,200,550,750,950,100,100}
+    \monCardStreet{Silverstone}{orange}{images/Great Britain carbon.png}{16,32,80,220,600,800,1000,100,100}
+    \monCardStreet{Hungary}{red}{images/Hungar carbon.png}{18,36,90,250,700,875,1050,150,150}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monCardStreet{Belgium}{red}{images/Belgium carbon.png}{18,36,90,250,700,875,1050,150,150}
+    \monCardStreet{Netherlands}{red}{images/Netherlands carbon.png}{20,40,100,300,750,925,1100,150,150}
+    \monCardStreet{Monza}{yellow}{images/Italy carbon.png}{22,44,110,330,800,975,1150,150,150}
+    \monCardStreet{Azerbaijan}{yellow}{images/Azerbaijan carbon.png}{22,44,110,330,800,975,1150,150,150}
+    \monCardStreet{Singapore}{yellow}{images/Singapore carbon.png}{24,48,120,360,850,1025,1200,150,150}
+    \monCardStreet{USA}{green}{images/USA carbon.png}{26,52,130,390,900,1100,1275,200,200}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monCardStreet{Mexico}{green}{images/Mexico carbon.png}{26,52,130,390,900,1100,1275,200,200}
+    \monCardStreet{Brazil}{green}{images/Brazil carbon.png}{28,56,150,450,1000,1200,1400,200,200}
+    \monCardStreet{Las Vegas}{blue}{images/Las Vegas carbon.png}{35,70,175,500,1100,1300,1500,200,200}
+    \monCardStreet{Abu Dhabi}{blue}{images/Abu Dhab carbon.png}{50,100,200,600,1400,1700,2000,200,200}
+    \monCardRail{Airodynamics Department}{white}{images/airo_dep.jpg}{25,50,100,200}
+    \monCardRail{Powertrain Department}{white}{images/power_dep.jpg}{25,50,100,200}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monCardRail{Durability Department}{white}{images/dura_dep.jpg}{25,50,100,200}
+    \monCardRail{Chassis Department}{white}{images/chass_dep.jpg}{25,50,100,200}
+    \monCardUtil{Pirelli Factory}{white}{images/pirelli.jpg}
+    \monCardUtil{Media Pen}{white}{images/mediapen.jpg}
+\end{minipage}
+
+\end{document}

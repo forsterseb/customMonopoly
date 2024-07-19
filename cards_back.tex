@@ -1,0 +1,57 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{float}
+\usepackage{xargs}
+\usepackage{listofitems}
+
+\setmainfont[Mapping=tex-text, BoldFont=Kabel_Bold.ttf]{Kabel_Regular.ttf}
+
+\begin{document}
+\input{cardCommands}
+
+%
+% back of hand cards
+%
+\begin{minipage}{0.375\textwidth}
+    \monCardBack{Bahrain}{30}
+    \monCardBack{Jeddah}{30}
+    \monCardBack{Australia}{50}
+    \monCardBack{Japan}{50}
+    \monCardBack{China}{60}
+    \monCardBack{Imola}{70}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monCardBack{Monaco}{70}
+    \monCardBack{Canada}{80}
+    \monCardBack{Spain}{90}
+    \monCardBack{Austria}{90}
+    \monCardBack{Silverstone}{100}
+    \monCardBack{Hungary}{110}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monCardBack{Belgium}{110}
+    \monCardBack{Netherlands}{120}
+    \monCardBack{Monza}{130}
+    \monCardBack{Azerbaijan}{130}
+    \monCardBack{Singapore}{140}
+    \monCardBack{USA}{150}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monCardBack{Mexico}{150}
+    \monCardBack{Brazil}{160}
+    \monCardBack{Las Vegas}{175}
+    \monCardBack{Abu Dhabi}{200}
+    \monCardBack{Airodynamics Department}{100}
+    \monCardBack{Powertrain Department}{100}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}    
+    \monCardBack{Durability Department}{100}
+    \monCardBack{Chassis Department}{100}
+    \monCardBack{Pirelli Factory}{75}
+    \monCardBack{Media Pen}{75}
+\end{minipage}
+\end{document}

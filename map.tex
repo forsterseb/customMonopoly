@@ -1,0 +1,70 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{float}
+\usepackage{xargs}
+\usepackage{listofitems}
+
+\setmainfont[Mapping=tex-text, BoldFont=Kabel_Bold.ttf]{Kabel_Regular.ttf}
+
+\begin{document}
+\input{mapTiles}
+
+\begin{minipage}[!t][30cm][t]{9cm}
+    \monMapStart{\$200 for lap}{images/sfline.jpg}
+    \monMapStew{Stewards}{images/stewards.jpg}
+    \monMapMVPod{Max Verstappen Podcast}{images/mv_podcast.jpg}
+    \monMapGTS{Go to stewards}{images/summon.jpg}
+\end{minipage}
+
+%
+% map tiles
+%
+\begin{minipage}{0.375\textwidth}
+    \monMapStreet{Bahrain}{brown}{images/Bahrain carbon.png}{60}
+    \monMapStreet{Jeddah}{brown}{images/Saudi Arabia carbon.png}{60}
+    \monMapStreet{Australia}{cyan}{images/Australia carbon.png}{100}
+    \monMapStreet{Japan}{cyan}{images/Japan carbon.png}{100}
+    \monMapStreet{China}{cyan}{images/China carbon.png}{120}
+    \monMapStreet{Imola}{pink}{images/Emilia Romagna carbon.png}{140}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monMapStreet{Monaco}{pink}{images/Monte Carlo carbon.png}{140}
+    \monMapStreet{Canada}{pink}{images/Canada carbon.png}{160}
+    \monMapStreet{Spain}{orange}{images/Spain carbon.png}{180}
+    \monMapStreet{Austria}{orange}{images/Austria carbon.png}{180}
+    \monMapStreet{Silverstone}{orange}{images/Great Britain carbon.png}{200}
+    \monMapStreet{Hungary}{red}{images/Hungar carbon.png}{220}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monMapStreet{Belgium}{red}{images/Belgium carbon.png}{220}
+    \monMapStreet{Netherlands}{red}{images/Netherlands carbon.png}{240}
+    \monMapStreet{Monza}{yellow}{images/Italy carbon.png}{260}
+    \monMapStreet{Azerbaijan}{yellow}{images/Azerbaijan carbon.png}{260}
+    \monMapStreet{Singapore}{yellow}{images/Singapore carbon.png}{280}
+    \monMapStreet{USA}{green}{images/USA carbon.png}{300}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monMapStreet{Mexico}{green}{images/Mexico carbon.png}{300}
+    \monMapStreet{Brazil}{green}{images/Brazil carbon.png}{320}
+    \monMapStreet{Las Vegas}{blue}{images/Las Vegas carbon.png}{350}
+    \monMapStreet{Abu Dhabi}{blue}{images/Abu Dhab carbon.png}{400}
+    \monMapUtil{Airodynamics Department}{images/airo_dep.jpg}{200}
+    \monMapUtil{Powertrain Department}{images/power_dep.jpg}{200}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monMapUtil{Durability Department}{images/dura_dep.jpg}{200}
+    \monMapUtil{Chassis Department}{images/chass_dep.jpg}{200}
+    \monMapUtil{Pirelli Factory}{images/pirelli.jpg}{150}
+    \monMapUtil{Media \\Pen}{images/mediapen.jpg}{150}
+    \monMapUtil{Sponsorship Dividend}{images/sponsor.jpeg}{200}
+    \monMapUtil{Victory Celebrations}{images/victory.jpg}{100}
+\end{minipage}
+\begin{minipage}{0.375\textwidth}
+    \monMapCard{FIA}{images/fia.png} % chance
+    \monMapCard{Team Radio}{images/team_rad.jpg} % community chest
+\end{minipage}
+\end{document}
