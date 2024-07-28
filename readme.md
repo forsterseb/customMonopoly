@@ -11,6 +11,8 @@ and use xelatex
 
 After building a pdf file, you may extract a png file using `python crop_pdf.py input.pdf output.<pdf/png>`, which crops the pdf to its contents and saves the result.
 
+Using the cropped result from `map.tex` the monopoly board can be generated with `python img_to_map.py tiles.png output.png` (and further customized with background color and image).
+
 ## Structure
 ├── `cardCommands.tex`: contains the basic commands for the creation of cards  
 │&emsp;&emsp;├── `cards.tex`: contains the cards the players get  
@@ -24,3 +26,6 @@ After building a pdf file, you may extract a png file using `python crop_pdf.py 
 
 ## Example F1 Theme
 ![](cards1.png)
+
+## Example F1 Board
+![](board.png)
