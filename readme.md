@@ -10,7 +10,7 @@ To build the latex files you need the original monopoly font: Kabel Bold and Reg
 
 After building a pdf file, you may extract a png file using `python crop_pdf.py input.pdf output.<pdf/png>`, which crops the pdf to its contents and saves the result.
 
-Using the cropped result from `map.tex` the monopoly board can be generated with `python img_to_map.py tiles.png output.png` (and further customized with background color and image).
+Using the cropped result from `map.tex` the monopoly board can be generated with `python img_to_map.py tiles.png output.png [background image path] [background color]` (and further customized with background color and image).
 
 ## Structure
 ├── `cardCommands.tex`: contains the basic commands for the creation of cards  
