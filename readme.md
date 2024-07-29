@@ -2,12 +2,11 @@
 Build a custom monopoly game with these latex files.
 
 This repository contains latex files for 
-- map tiles (streets, )
-- cards (streets, utility, railstations, community/chance)
+- map tiles, cards (streets, utility, railstations, community/chance)
+- scripts to export the latex pdf to images and generate a map from the map tiles
 
 ## Building
-To build the latex files you need the original monopoly font: Kabel Bold and Regular  
-and use xelatex
+To build the latex files you need the original monopoly font: Kabel Bold and Regular and use xelatex for compiling
 
 After building a pdf file, you may extract a png file using `python crop_pdf.py input.pdf output.<pdf/png>`, which crops the pdf to its contents and saves the result.
 
@@ -24,8 +23,19 @@ Using the cropped result from `map.tex` the monopoly board can be generated with
 │&emsp;&emsp;├── `map.tex`: contains the actual creation of map tiles  
 
 
-## Example F1 Theme
-![](cards1.png)
+## Outputs
+<table width="100%">
+  <tr>
+  <td width="33%" style="text-align: center; vertical-align: middle;"><img src="out/chance.png" width="100%"><br>Chance</td>
+  <td width="33%"style="text-align: center; vertical-align: middle;"><img src="out/community.png" width="100%"><br>Community</td>
+  <td width="33%"style="text-align: center; vertical-align: middle;"><img src="out/cards.png" width="100%"><br>Cards</td>
+  </tr>
+  <tr>
+  <td width="33%"style="text-align: center; vertical-align: middle;"><img src="out/chance_back.png" width="100%"><br>Chance Back</td>
+  <td width="33%"style="text-align: center; vertical-align: middle;"><img src="out/community_back.png" width="100%"><br>Community Back</td>
+  <td width="33%"style="text-align: center; vertical-align: middle;"><img src="out/cards_back.png" width="100%"><br>Cards Back</td>
+  </tr>
+</table>
 
 ## Example F1 Board
-![](board.png)
+![](out/board.png)
